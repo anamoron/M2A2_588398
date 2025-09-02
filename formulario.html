@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <title>Registro para un Torneo de Videojuegos</title>
+    </head>
+
+    <body>
+        <h1>Registro para un Torneo de Videojuegos</h1>
+        <form action = "" method = "post">
+            <table border = "1" cellpadding = "8">
+                <tr>
+                    <td><label>Nombre del jugador:</label></td>
+                    <td>
+                        <input type="text" name="nombre" minlength="3" maxlength="15" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Correo electrónico:</label></td>
+                    <td>
+                        <input type="email" name="email" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Edad</label></td>
+                    <td>
+                        <input type = "number" id = "edad" name = "edad" min = "12" max = "40" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Nickname</label></td>
+                    <td>
+                        <input type = "text" id = "nombre" name = "nombre" pattern="[A-Za-z0-9]+" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Categoría:</label></td>
+                    <td>
+                        <input type = "radio" name = "categoria" value = "Principiante" required> Principiante
+                        <input type = "radio" name = "categoria" value = "Intermedio" required> Intermedio
+                        <input type = "radio" name = "categoria" value = "Experto" required> Experto
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Juegos Favoritos</label></td>
+                    <td>
+                        <input type = "checkbox" name = "Juegos" value = "FIFA" > FIFA
+
+                        <input type = "checkbox" name = "Juegos" value = "LoL" required> LoL
+ 
+                        <input type = "checkbox" name = "Juegos" value = "Minecraft"  required> Minecraft
+
+                    </td>
+                </tr>
+
+                <tr>
+                    <td><label>Fecha de Inscripción</label></td>
+                    <td>
+                        <input type = "date" name = "fecha" min ="2025-01-01" max = "2025-12-31" required>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2" style = "text-align:center">
+                        <input type="submit" value="Enviar">
+                        <input type="reset" value="Restablecer">
+                    </td>
+                    
+                </tr>
+
+            </table>
+
+
+        </form>
+        
+    </body>
+
+</html>
